@@ -1,0 +1,112 @@
+@keyframes cloud1 {
+    0% {
+        left: 5%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes cloud3 {
+    0% {
+        right: 5%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes e57-sh {
+    0% {
+        width: 237px;
+        animation-timing-function: ease-in-out;
+        opacity: 0.75;
+    }
+
+    50% {
+        width: 180px;
+        opacity: 0.75;
+        right: 0%;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        width: 237px;
+        opacity: 0.75;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes e57 {
+    0% {
+        top: 55%;
+        animation-timing-function: ease-in-out;
+    }
+    50% {
+        top: 65%;
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        top: 55%;
+        animation-timing-function: ease-in-out;
+    }
+
+}
+
+@keyframes arrow {
+    0% {
+        bottom: -10%;
+        right: -11%;
+    }
+    50% {
+        bottom: -14%;
+        right: -17%;
+    }
+    100% {
+        bottom: -10%;
+        right: -11%;
+    }
+}
+
+.anim-scale {
+    animation: scale 0.3s ease-in-out;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.05);
+    }
+    25% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.anim-cont8 {
+    animation: cont8 0.4s ease-in-out;
+}
+
+@keyframes cont8 {
+    0% {
+        transform: rotate(-3deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    70% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+.d_flex {
+    display: flex;
+}
+
+d_block {
+    display: block;
+}
+
+.center {
+    justify-content: center;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.slow {
+    transition: 0.1s all;
+}
+
+.p_absolute {
+    position: absolute;
+}
+
+.p_fixed {
+    position: fixed;
+}
+
+.p_relative {
+    position: relative;
+}
+
+.white {
+    color: #fff;
+}
+
+.yellow {
+    color: yellow;
+}
+
+@font-face {
+    font-family: Fighting;
+    src: url('../fonts/Fighting.ttf');
+}
+
+.fight {
+    font-family: Fighting;
+}
+
+.font_40 {
+    font-size: 40px;
+}
+
+.font_130 {
+    font-size: 130px;
+}
+
+.font_19 {
+    font-size: 19px;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.mb_25 {
+    margin-bottom: 25px;
+}
+
+.z_index {
+    z-index: 5;
+}
+
+.w_100 {
+    width: 100%;
+}
+
+.op_0 {
+    opacity: 0;
+}
