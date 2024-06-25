@@ -39,12 +39,14 @@
         </div>
         <div class="burningman">
             <div id="fire" class="p_absolute"></div>
-            <img src="./images/burningman.png" alt="burningman" class="burningman p_absolute">
+            <img src="./images/burningman.png" alt="burningman">
         </div>
         <div class="e57">
-            <div id="fire1" class="p_absolute"></div>
-            <img class="e57-img p_absolute" src="images/e57.png" alt="e57">
-            <img class="e57-shadow p_absolute" src="images/e57_shadow.png" alt="e57_shadow">
+            <div>
+                <img class="e57-img" src="images/e57.png" alt="e57">
+                <div id="fire1"></div>
+                <img class="e57-shadow" src="images/e57_shadow.png" alt="e57_shadow">
+            </div>
         </div>
         <div class="car p_absolute">
             <img class="lucifer p_relative" src="images/lucifer.png" alt="lucifer">
@@ -268,42 +270,39 @@
             </div>
         </div>
         <div class="content7" id="content6">
-            <h3 class="fight yellow mb_25 p_relative z_index">Kontakt</h3>
-            <p class="gefaehrte-p white text_center cursive p_relative z_index op_0">
+            <h3 class="fight yellow mb_25">Kontakt</h3>
+            <p class="gefaehrte-p white text_center cursive">
                 Zögere nicht die Show anzufragen! Wir freuen uns auf Deine Nachricht.
             </p>
             <form action="#" method="get">
-                <div class="d_flex center form p_relative">
-                    <input type="text" placeholder="E-Mail Adresse" class="white form-text">
-                    <input type="text" placeholder="Vorname" class="white form-text">
-                    <input type="text" placeholder="Telefon nummer" class="white form-text">
-                    <input type="text" placeholder="Name" class="white form-text">
-                    <div class="open p_relative">
-                        <i class="fas fa-arrow-circle-down open_i p_absolute"></i>
-                        <input type="text" class="white form-text1" disabled="disabled">
-                        <div class="p_absolute open_form">
-                            <p>fhgjhgk</p>
-                            <p>fhgjhgk</p>
-                            <p>fhgjhgk</p>
-                            <p>fhgjhgk</p>
-                            <p>fhgjhgk</p>
-                        </div>
+                <div class="d_flex center form">
+                    <div>
+                        <label>
+                            <input type="text" placeholder="E-Mail Adresse" class="white form-text">
+                        </label>
+                        <label>
+                            <input type="text" placeholder="Vorname" class="white form-text">
+                        </label>
                     </div>
-                    <div class="open p_relative">
-                        <i class="fas fa-arrow-circle-down open_i2 p_absolute"></i>
-                        <input type="text" class="white form-text2" disabled="disabled">
-                        <div class="p_absolute open_form2">
-                            <p>fhgjhgk</p>
-                            <p>fhgjhgk</p>
-                            <p>fhgjhgk</p>
-                            <p>fhgjhgk</p>
-                            <p>fhgjhgk</p>
-                        </div>
+                    <div>
+                        <label>
+                            <input type="text" placeholder="Telefon nummer" class="white form-text">
+                        </label>
+                        <label>
+                            <input type="text" placeholder="Name" class="white form-text">
+                        </label>
                     </div>
-                </div>
-                <div class="d_flex center">
-                    <textarea name="" id="" cols="30" rows="10" placeholder=" Deine Nachricht"
-                              class="white form-text"></textarea>
+                    <div>
+                        <label for=""></label>
+                        <textarea name=""
+                                  id=""
+                                  cols="30"
+                                  rows="10"
+                                  placeholder="Deine Nachricht"
+                                  class="white form-text">
+                </textarea>
+                    </div>
+
                 </div>
             </form>
         </div>
@@ -317,6 +316,8 @@
 </body>
 </html>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script><script src="dist/owl.carousel.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="dist/owl.carousel.min.js"></script>
 <script src="js/fire-0.62.min.js"></script>
 <script src="js/index.js"></script>

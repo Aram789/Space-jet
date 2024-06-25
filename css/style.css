@@ -25,15 +25,15 @@ header nav a:hover {
     border-bottom: 1px solid yellow;
 }
 
-header nav a.activ:hover {
+header nav a.active:hover {
     color: #1032ba;
     border-bottom: 1px solid blue;
 }
 
-.activ {
-    background: yellow;
-    color: #1032ba;
-}
+/*.active {*/
+/*    background: yellow;*/
+/*    color: #1032ba;*/
+/*}*/
 
 .gradient {
     height: 100%;
@@ -71,7 +71,7 @@ header nav a.activ:hover {
     z-index: 4;
     width: 50%;
     height: 50%;
-    animation: cloud1 80s infinite;
+    animation: cloud1 80s infinite linear;
 }
 
 .cloud2 {
@@ -82,7 +82,7 @@ header nav a.activ:hover {
     z-index: 4;
     width: 21%;
     height: 21%;
-    animation: cloud1 80s infinite;
+    animation: cloud1 80s infinite linear;
     margin-left: -30%;
 }
 
@@ -94,7 +94,7 @@ header nav a.activ:hover {
     z-index: 4;
     width: 21%;
     height: 21%;
-    animation: cloud3 80s infinite;
+    animation: cloud3 80s infinite linear;
 }
 
 .burningman {
@@ -102,71 +102,78 @@ header nav a.activ:hover {
     right: 0;
     margin: 0 auto;
     z-index: 4;
-    width: 15%;
     top: 135px;
+    position: absolute;
+    width: 284px;
+}
+
+.e57 {
+    position: absolute;
+    right: 45px;
+    bottom: 145px;
+    z-index: 5;
+}
+
+.e57 > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #fire {
-    top: 17.5%;
-    right: 39%;
+    top: 32px;
+    right: -93px;
     transform: rotate(70deg);
     z-index: 4;
 }
 
 #fire1 {
-    top: 26.5%;
-    right: 0%;
+    margin-top: -44px;
     transform: rotate(180deg);
-    animation: e57 2.5s infinite;
-    margin-top: 8%;
-    margin-right: 4.4%;
 }
 
 .e57-shadow {
     animation: e57-sh 2.5s infinite;
-    right: -2%;
-    bottom: 65px;
-    margin-right: 10px;
 }
 
 .e57-img {
-    animation: e57 2.5s infinite;
-    right: 10px;
-    width: 10%;
+    z-index: 5;
 }
 
 /*----------------car-------------------------*/
 .car {
-    bottom: 170px;
-    left: 0%;
+    bottom: 270px;
+    left: 0;
     width: 100%;
     z-index: 4;
 }
 
 .lucifer {
-    margin: 0% 0% -1% 15%;
-    width: 0%;
+    margin: 0 0 -1% 15%;
+    width: 0;
 }
 
 .jet_rat {
-    margin: 0% 0% -8.5% -27%;
-    width: 0%;
+    margin: 0 0 -8.5% -27%;
+    width: 0;
 }
 
 .scooter {
-    margin: 0% 0% -9% -15%;
-    width: 0%;
+    margin: 0 0 -9% -15%;
+    width: 0;
 }
 
 .mucki {
-    margin: 0% 0% -9% -2%;
+    margin: 0 0 -9% -2%;
     z-index: 5;
-    width: 0%;
+    width: 0;
 }
 
 .beast {
     margin: 0 0 -7% -24%;
-    width: 0%;
+    width: 0;
 }
 
 .ape {
@@ -397,18 +404,38 @@ header nav a.activ:hover {
 
 /*--------------------------content7-----------------------*/
 .content7 {
-    height: 700px;
+    padding: 50px 0;
 }
 
 .bg {
-    background: url("../images/center_bg.jpg") no-repeat;
-    background-size: cover;
+    background: url("../images/center_bg.jpg") no-repeat fixed center center / cover;
+
 }
 
 .form {
-    width: 50%;
-    margin: 120px auto 0 auto;
     flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1008px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    gap: 10px;
+}
+
+.form div {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.form div:last-child {
+    display: inline;
+    width: 100%;
+}
+
+.form label {
+    width: 100%;
+
 }
 
 .form input {
@@ -416,10 +443,9 @@ header nav a.activ:hover {
     border: 1px solid silver;
     background-color: black;
     padding: 10px;
-    width: 40%;
     box-sizing: border-box;
-    margin: 7px 5px;
     font-size: 18px;
+    width: 100%;
 }
 
 textarea {
@@ -427,8 +453,8 @@ textarea {
     border-radius: 5px;
     border: 1px solid silver;
     background-color: black;
-    width: 39.5%;
     font-size: 18px;
+    width: 100%;
 }
 
 form .form-text:hover {
@@ -438,45 +464,6 @@ form .form-text:hover {
 form .form-text:focus {
     border-color: yellow;
     box-shadow: 0px 0px 14px 0px rgb(255 255 0);
-}
-
-.fa-arrow-circle-down {
-    top: 35%;
-    left: 18px;
-    z-index: 5;
-    color: #757562;
-    cursor: pointer;
-}
-
-.open_i {
-    top: 35%;
-    z-index: 5;
-    left: -48%;
-    color: #757562;
-    cursor: pointer;
-}
-
-.open_form {
-    border-radius: 5px;
-    border: 1px solid silver;
-    background-color: black;
-    padding: 10px;
-    width: 150%;
-    box-sizing: border-box;
-    font-size: 18px;
-    right: 4px;
-    top: 49px;
-}
-
-.open_form p, .open_form2 p {
-    color: #757562;
-    font-family: cursive;
-    line-height: 45px;
-}
-
-.open_form p:hover, .open_form2 p:hover {
-    color: yellow;
-    cursor: pointer;
 }
 
 .form-text1 {
