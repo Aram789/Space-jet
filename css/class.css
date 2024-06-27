@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style-type: none;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 .d_flex {
