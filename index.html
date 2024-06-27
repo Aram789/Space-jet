@@ -19,17 +19,17 @@
     </div>
     <div class="heder d_flex center">
         <nav>
-            <a href="#content1" class="Start activ">Start</a>
-            <a href="#content2" class="Die_Show">Die Show</a>
-            <a href="#content3" class="Die_Fahrzeuge">Die Fahrzeuge</a>
-            <a href="#content4" class="Besucher">Besucher</a>
-            <a href="#content5" class="Paket_Preis">Paket Preise</a>
-            <a href="#content6" class="Kontakt">Kontakt</a>
+            <a href="#content1" class="Start activ" data-scroll="content1">Start</a>
+            <a href="#content2" class="Die_Show" data-scroll="content2">Die Show</a>
+            <a href="#content3" class="Die_Fahrzeuge" data-scroll="content3">Die Fahrzeuge</a>
+            <a href="#content4" class="Besucher" data-scroll="content4">Besucher</a>
+            <a href="#content5" class="Paket_Preis" data-scroll="content5">Paket Preise</a>
+            <a href="#content6" class="Kontakt" data-scroll="content6">Kontakt</a>
         </nav>
     </div>
 </header>
 <div class="wrapper">
-    <div class="content1 p_relative" id="content1">
+    <section class="content1 p_relative" id="content1">
         <div class="gradient"></div>
         <img class="p_absolute big-text" src="./images/logo_bg_big.png" alt="logo">
         <div class="clouds">
@@ -56,21 +56,21 @@
             <img class="ape p_relative" src="images/ape.png" alt="ape">
             <img class="beast p_relative" src="images/beast.png" alt="beast">
         </div>
-    </div>
-    <div class="content2 p_relative">
+    </section>
+    <section class="content2 p_relative">
         <div class="bg_mans p_absolute d_flex center">
             <p class="p_absolute  white bg_mans_text">Bekannt aus den Medien</p>
             <div class="youtube p_absolute">
                 <a class="white" href="https://www.youtube.com/watch?v=peWAlEJDlg4">YouTube Video ansehen</a>
             </div>
         </div>
-    </div>
+    </section>
     <div>
         <div class="rate p_absolute"></div>
         <div class="rate_sh p_absolute"></div>
     </div>
     <div class="bg">
-        <div class="content3 p_relative" id="content2">
+        <section class="content3 p_relative" id="content2">
             <div class="gradient_pilot p_absolute"></div>
             <h3 class="yellow p_absolute">Die_Show</h3>
             <div class="d_flex center align_center content3_pilot">
@@ -112,8 +112,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content4 d_flex center align_center" id="content3">
+        </section>
+        <section class="content4 d_flex center align_center" id="content3">
             <div>
                 <p class="yellow fight font_40">Besuche uns auf</p>
                 <p class="yellow fight font_130">Facebook</p>
@@ -127,8 +127,8 @@
                 <img src="./images/like-firey.png" alt="like-fire">
                 <img src="./images/arrow.png" alt="arrow" class="arrow p_absolute">
             </div>
-        </div>
-        <div class="content5 p_relative" id="content4">
+        </section>
+        <section class="content5 p_relative" id="content4">
             <div class="gradient_5 p_absolute"></div>
             <h3 class="fight yellow mb_25 p_relative z_index op_0">Besucher</h3>
             <p class="gefaehrte-p white text_center cursive p_relative z_index op_0">
@@ -200,8 +200,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content6" id="content5">
+        </section>
+        <section class="content6" id="content5">
             <h3 class="fight yellow mb_25 p_relative z_index">Paket Preise</h3>
             <p class="gefaehrte-p white text_center cursive p_relative z_index op_0" style="opacity: 1;">
                 Du willst mehr über die Fahrzeuge wissen? Für Details einfach drauf klicken!
@@ -268,8 +268,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content7" id="content6">
+        </section>
+        <section class="content7" id="content6">
             <h3 class="fight yellow mb_25">Kontakt</h3>
             <p class="gefaehrte-p white text_center cursive">
                 Zögere nicht die Show anzufragen! Wir freuen uns auf Deine Nachricht.
@@ -300,12 +300,11 @@
                                   rows="10"
                                   placeholder="Deine Nachricht"
                                   class="white form-text">
-                </textarea>
+                        </textarea>
                     </div>
-
                 </div>
             </form>
-        </div>
+        </section>
     </div>
 </div>
 <footer>

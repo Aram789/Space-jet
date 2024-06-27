@@ -1,7 +1,7 @@
 $(document).ready(() => {
     let count = 0;
-
-
+    let activateActiveLink = true;
+    // section 4
     if (count < 500) {
         setInterval(function () {
             if (count < 500) {
@@ -10,6 +10,9 @@ $(document).ready(() => {
             }
         }, 35);
     }
+    // ---------------------
+
+    // section 5
     $(".row1 div, .row2 div").mouseover(function () {
         $(this).find('h4').css({
             color: 'yellow',
@@ -26,13 +29,18 @@ $(document).ready(() => {
             transform: 'scale(1)',
         })
     });
-    $("header nav a").click(function () {
-        // remove classes from all
-        $("header nav a").removeClass("active");
-        // add class to the one we clicked
-        $(this).addClass("active");
-    });
+    // ---------------
 
+    $("header nav a").click(function (e) {
+        activateActiveLink = false
+
+        $('nav a').removeClass('activeLink');
+        $(this).addClass('activeLink');
+        setTimeout(function () {
+            activateActiveLink = true
+        }, 3000)
+
+    });
 
     $('.lucifer').animate({
         width: '30%'
@@ -106,10 +114,10 @@ $(document).ready(() => {
                 }
             }
 
-            if (scrollPosition > $('.content3').offset().top) {
+            if (scrollPosition > $('.content3').offset().top -600) {
                 $('.pilot-img').stop().animate({
                     top: '-50px',
-                }, 700, function () {
+                }, 400, function () {
                 });
                 $('.gradient_pilot').stop().animate({
                     height: '700px',
@@ -117,7 +125,7 @@ $(document).ready(() => {
                 });
             }
 
-            if (scrollPosition > $('.content4').offset().top / 0.8) {
+            if (scrollPosition > $('.content4').offset().top / 0.9) {
                 $('.gradient_5').stop().animate({
                     height: '800px',
                 }, 300, function () {
@@ -139,42 +147,15 @@ $(document).ready(() => {
                 $('.scale').removeClass('anim-scale')
             }
 
-            //--------------nav------------------
-  
-            if (scrollPosition >= 0) {
-                $('.Start').addClass('active')
-            }
-            if (scrollPosition > $('.content3').offset().top - 5) {
-                $('.Start').removeClass('active')
-                $('.Die_Show').addClass('active')
-            } else {
-                $('.Die_Show').removeClass('active')
-            }
-            if (scrollPosition > $('.content4').offset().top - 5) {
-                $('.Die_Show').removeClass('active')
-                $('.Die_Fahrzeuge').addClass('active')
-            } else {
-                $('.Die_Fahrzeuge').removeClass('active')
-            }
-            if (scrollPosition > $('.content5').offset().top - 5) {
-                $('.Die_Fahrzeuge').removeClass('active')
-                $('.Besucher').addClass('active')
-            } else {
-                $('.Besucher').removeClass('active')
-            }
-            if (scrollPosition > $('.content6').offset().top - 5) {
-                $('.Besucher').removeClass('active')
-                $('.Paket_Preis').addClass('active')
-            } else {
-                $('.Paket_Preis').removeClass('active')
-            }
-            if (scrollPosition > $('.content7').offset().top - 200) {
-                $('.Paket_Preis').removeClass('active')
-                $('.Kontakt').addClass('active')
-            } else {
-                $('.Kontakt').removeClass('active')
-            }
-            //-------end-------nav------------------
+            $('section').each(function () {
+                let top = $(this).offset().top - 300;
+                let bottom = top + $(this).outerHeight();
+
+                if (scrollPosition >= top && scrollPosition <= bottom && activateActiveLink) {
+                    $('nav a').removeClass('activeLink');
+                    $('nav').find('a[data-scroll="' + $(this).attr('id') + '"]').addClass('activeLink');
+                }
+            });
 
         }, 100);
     });

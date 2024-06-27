@@ -25,15 +25,15 @@ header nav a:hover {
     border-bottom: 1px solid yellow;
 }
 
-header nav a.active:hover {
+header nav a.activeLink:hover {
     color: #1032ba;
     border-bottom: 1px solid blue;
 }
 
-/*.active {*/
-/*    background: yellow;*/
-/*    color: #1032ba;*/
-/*}*/
+.activeLink {
+    background: yellow;
+    color: #1032ba;
+}
 
 .gradient {
     height: 100%;
@@ -360,8 +360,7 @@ header nav a.active:hover {
 .content6-blocks {
     background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
     max-width: 1008px;
-    margin: 0 auto;
-    margin-top: 140px;
+    margin: 140px auto 0;
 }
 
 .content6-block1 {
@@ -403,8 +402,8 @@ header nav a.active:hover {
 }
 
 /*--------------------------content7-----------------------*/
-.content7 {
-    padding: 50px 0;
+.content7{
+    padding: 100px 0;
 }
 
 .bg {
